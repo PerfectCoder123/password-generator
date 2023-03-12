@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Phudu:wght@300&family=Tinos&display=swap');
+body{
+    margin: 0px;
+    background-color: rgb(25, 28, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#root{
+    background-color: #50f582;
+}
+
+.main-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto auto;
+    background-color: rgb(25, 28, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.password-container{
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.password-title{
+    position: relative;
+    bottom: 20px;
+    color: gray;
+    font-family: 'Tinos', serif;
+    font-size: large;
+    
+}
+
+.password-text-box{
+    display: flex;
+    width: 325px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(48, 46, 53);
+    font-family: 'Orbitron', sans-serif;
+    padding : 10px;
+    color: gray;
+    font-size: large;
+}
+.password-main-body{
+    width: 325px;
+    height: 500px;
+    padding : 10px;
+    margin-top: 15px;
+    background-color: rgb(48, 46, 53);
+    color: gray;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#password-copy-image-btn{
+    position: flex;
+    margin-left: 10px;
+    
+}
+
+.password-generate-button{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: small;
+    padding : 8px;
+    margin: 10px auto ;
+    border-width: 2px;
+    border-color: rgb(57, 221, 17);
+    border-radius: 6px;
+    color: rgb(57, 221, 17);
+   
+}
+
+.password-generate-button:hover{
+    background-color: rgb(177, 241, 164);
+    color: black;
+    border:none;
+}
+
+
+.character-counter{
+ width: 200px;
+ height: 20px;
+ display: flex;
+ flex-direction: row;
+ margin-left: 15px;
+ margin-top: 5px;
+ font-family: 'Tinos', serif;
+ color: rgb(255, 255, 255);
+ font-size: medium;
+ 
+}
+
+
+.password-slider input[type="range"]{
+width: 300px;
+height: 20px;
+margin-top: 20px;
+cursor: pointer;
+accent-color: #50f582;
+}
+
+#rangeValue{
+    position: relative;
+    bottom: 85px;
+    left: 140px;
+    font-size: medium;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: rgb(57, 221, 17);
+}
+
+.password-constraints{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    bottom:40px;
+    font-size: medium;
+    accent-color: #6cf550;
+    font-family:  Geneva, Verdana, sans-serif;
+    
+}
+
+.checkbox-body{
+    cursor: pointer;
+    background-color: aqua;
+    opacity: 0.8;
+
+}
+
+.password-strength-box{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 35px;
+    margin: auto;
+    bottom: 20px;
+    justify-content: center;
+    background-color: rgb(67, 74, 79);
+    font-size: medium;
+    color: rgb(162, 165, 168);
+    padding-top: 14px;
+    padding-left: 10px;
+    font-family: 'Phudu', cursive;
+}
+
+.password-generate-btn-box{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#password-btn-left-arrow{
+    position: relative;
+    width: 10px;
+    height: 14px;
+    left: 5px;
+    top: 2.5px;
+}
+#password-easy-box{
+    position: relative;
+    width: 2px;
+    height: 15px;
+    background-color: rgb(67, 74, 79);
+    border: 1px solid rgb(255, 255, 255);
+    left: 95px;
+
+}
+#password-medium-box{
+    position: relative;
+    width: 2px;
+    height: 15px;
+    background-color: rgb(67, 74, 79);
+    border: 1px solid rgb(255, 255, 255);
+    left: 97.5px;
+    
+}
+#password-hard-box{
+    position: relative;
+    width: 2px;
+    height: 15px;
+    background-color: rgb(67, 74, 79);
+    border: 1px solid rgb(255, 255, 255);
+    left: 100px;
+}
+@media screen and (max-width:400px) {
+   
+}

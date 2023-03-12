@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="temp.css" />
+  </head>
+  <body>
+    
+    <div class="main-container">  
+    <div class="password-container">
+    <div class="password-title">Password Generator</div>
+    <div class="password-text-box">
+      <img src = "copy.png" id = "password-copy-image-btn">
+    </div>
+    <div class="password-main-body">
+       <div class="character-counter">
+        Character Length
+       </div>
+        <div class="password-slider">
+        <input type="range" min="0" max="16" value="8" oninput="rangeValue.innerText = this.value">
+        <p id="rangeValue">8</p>
+        </div>
+       <div class="password-constraints">
+        <div class="upper-case">
+          <input type="checkbox" class = "checkbox-body"  id="upper-case" name="upper-case" value="upper-case">
+          <label for="upper-case">Include Uppercase Letters</label>
+        </div>
+        <div class="lower-case">
+          <input type="checkbox" class = "checkbox-body" id="lower-case" name="lower-case" value="lower-case">
+          <label for="lower-case">Include Lowercase Letters</label>
+        </div>
+       <div class="number">
+        <input type="checkbox" class = "checkbox-body" id="number" name="number" value="number">
+        <label for="number">Include Numbers</label>
+       </div>
+        <div class="special-character">
+          <input type="checkbox" class = "checkbox-body" id="special-character" name="special-character" value="special-character">
+          <label for="special-character">Include Special Character</label>
+        </div>
+       </div>
+       <div class="password-strength-box">
+        STRENGTH
+        <div class="password-easy-box"></div>
+        <div class="password-medium-box"></div>
+        <div class="password-hard-box"></div>
+       </div>
+       <div class="password-generate-btn-box">
+      <button class="password-generate-button">GENERATE
+        <img src="right-arrow.png"  id = "password-btn-left-arrow">
+      </button>
+    </div>
+    </div>
+    </div>
+
+    </div>
+  </body>
+
+</html>
